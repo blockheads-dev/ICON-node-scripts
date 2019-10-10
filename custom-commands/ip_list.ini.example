@@ -1,0 +1,13 @@
+# HOW TO CONFIGURE
+# Make directory in user home folder called "custom-commands-config"
+# ~/custom-commands-config/
+# Then copy this file to that directory
+# Rename file to ip_list.ini
+
+# Node IP Syntax as follows: NODE=ICON-{number};{IP}:{PORT};
+# Example( NODE=ICON-0;0.0.0.0:9000; )
+
+NODE=ICON-0;0.0.0.0:9000;
+NODE=ICON-1;0.0.0.0:9000;
+NODE=ICON-2;0.0.0.0:9000;
+#NODE=ICON-3;0.0.0.0:9000;
