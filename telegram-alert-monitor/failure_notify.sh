@@ -42,7 +42,7 @@ send_telegram_message() {
 		curl -s -X POST https://api.telegram.org/bot$BOTNUMBER/sendMessage -d chat_id=$ALERTCHATID -d text="❤️ Node $NAME IP: $IPN is back ONLINE. Please check http://$IPN/api/v1/status/peer";;
 	3)
 		BLOCKHEIGHT_3RDPARTY=`./getblockheight.sh`
-		curl -s -X POST https://api.telegram.org/bot$BOTNUMBER/sendMessage -d chat_id=$ALERTCHATID -d text="❤️ Node $NAME IP: $IPN stopped at block $CHECKED. $BLOCKHEIGHT_3RDPARTY. Please check http://$IPN/api/v1/status/peer. Please check http://$IPN/api/v1/status/peer";;
+		curl -s -X POST https://api.telegram.org/bot$BOTNUMBER/sendMessage -d chat_id=$ALERTCHATID -d text="❤️ Node $NAME IP: $IPN stopped at block $CHECKED. $BLOCKHEIGHT_3RDPARTY. Please check http://$IPN/api/v1/status/peer";;
 	esac
 }
 
