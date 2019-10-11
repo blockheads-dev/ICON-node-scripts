@@ -6,7 +6,7 @@ get_zicon_status() {
         echo "Testing zicon.solidwallet.io"
         BLOCKHEIGHT=`curl --insecure --connect-timeout 6 -s -H 'Content-Type: application/json' -d '{"jsonrpc": "2.0", "method": "icx_getLastBlock", "id": 1234}' https://zicon.tracker.solidwallet.io:443/api/v3  | jq .result.height`
         if [ -z $BLOCKHEIGHT ]; then
-                DATA="(zicon.solidwallet Maybe API Offline)"
+                DATA="(zicon.solidwallet API Maybe Offline)"
         else
                 DATA="(zicon.solidwallet API Online). Current Block height is $BLOCKHEIGHT"
         fi
